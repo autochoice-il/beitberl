@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בית ברל – העוזר הדיגיטלי</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#24725c; --green-dark:#1a5544; --ink:#1d2b26; --paper:#f5f8f6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Heebo',Arial,sans-serif; background:var(--paper); color:var(--ink); min-height:100vh; }
+  header { background:var(--green); color:#fff; padding:20px 16px; }
+  .wrap { max-width:880px; margin:0 auto; }
+  header .wrap { display:flex; align-items:center; gap:14px; }
+  header img { height:44px; }
+  header h1 { font-size:20px; font-weight:500; margin:0; }
+  main .wrap { padding:40px 16px; }
+  h2 { font-size:30px; margin:0 0 12px; color:var(--green-dark); }
+  p { font-size:17px; line-height:1.7; margin:0 0 24px; max-width:60ch; }
+  .chips { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+  .chip { border:1px solid var(--green); color:var(--green); background:#fff; border-radius:999px; padding:8px 16px; font:inherit; font-size:15px; cursor:pointer; }
+  .chip:hover { background:var(--green); color:#fff; }
+  .contact { font-size:15px; color:#4a5a54; border-top:1px solid #d7e2dd; padding-top:20px; }
+  .contact a { color:var(--green); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="https://www.beitberl.ac.il/wp-content/uploads/2025/05/Frame-50-1.svg" alt="המכללה האקדמית בית ברל">
+  <h1>העוזר הדיגיטלי</h1>
+</div></header>
+<main><div class="wrap">
+  <h2>שלום, איך אפשר לעזור?</h2>
+  <p>שאלו על תוכניות לימוד, תנאי קבלה, הרשמה, שכר לימוד ומלגות. אפשר גם להשאיר פרטים ויועץ לימודים יחזור אליכם.</p>
+  <div class="chips">
+    <button class="chip" data-q="תואר ראשון">תואר ראשון</button>
+    <button class="chip" data-q="תואר שני">תואר שני</button>
+    <button class="chip" data-q="הסבה להוראה">הסבה להוראה</button>
+    <button class="chip" data-q="מה תנאי הקבלה?">תנאי קבלה</button>
+    <button class="chip" data-q="אני רוצה שיחזרו אליי">השארת פרטים</button>
+  </div>
+  <div class="contact">מרכז ייעוץ והרשמה: <a href="tel:097476333">9121*</a> · <a href="https://www.beitberl.ac.il/" target="_blank" rel="noopener">לאתר המכללה</a></div>
+</div></main>
+<script type="text/javascript">
+  (function(d, t) {
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+      window.voiceflow.chat.load({
+        verify: { projectID: '6ad477d43b505f1bbd8bfc99' },
+        url: 'https://general-runtime.voiceflow.com',
+        voice: { url: 'https://runtime-api.voiceflow.com' },
+        environmentID: 'main',
+        versionVariant: 'published',
+        assistant: {
+          color: '#24725c',
+          side: 'left',
+          stylesheet: 'data:text/css;base64,LnZmcmMtY2hhdCwgLnZmcmMtY2hhdCAqIHsgZm9udC1mYW1pbHk6ICdIZWVibycsIEFyaWFsLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7IH0KLnZmcmMtY2hhdCwgLnZmcmMtaGVhZGVyLCAudmZyYy1hc3Npc3RhbnQtaW5mbyB7IGRpcmVjdGlvbjogcnRsOyB0ZXh0LWFsaWduOiByaWdodDsgfQoudmZyYy1tZXNzYWdlIHsgZGlyZWN0aW9uOiBydGw7IHRleHQtYWxpZ246IHJpZ2h0OyB1bmljb2RlLWJpZGk6IHBsYWludGV4dDsgfQoudmZyYy1zeXN0ZW0tcmVzcG9uc2UtLWxpc3QsIC52ZnJjLXN5c3RlbS1yZXNwb25zZS0tYWN0aW9ucyB7IGRpcmVjdGlvbjogcnRsOyB9Ci52ZnJjLXN5c3RlbS1yZXNwb25zZSAudmZyYy1tZXNzYWdlIHsgYmFja2dyb3VuZC1jb2xvcjogI2VlZjVmMjsgY29sb3I6ICMxZDJiMjY7IH0KLnZmcmMtdXNlci1yZXNwb25zZSAudmZyYy1tZXNzYWdlIHsgYmFja2dyb3VuZC1jb2xvcjogIzI0NzI1YzsgY29sb3I6ICNmZmZmZmY7IH0KLnZmcmMtYnV0dG9uIHsgZGlyZWN0aW9uOiBydGw7IH0KLnZmcmMtaW5wdXQsIC52ZnJjLWNoYXQtaW5wdXQsIC52ZnJjLWNoYXQtaW5wdXQgdGV4dGFyZWEgeyBkaXJlY3Rpb246IHJ0bDsgdGV4dC1hbGlnbjogcmlnaHQ7IH0KLnZmcmMtcHJvbXB0LCAudmZyYy1wcm9hY3RpdmUsIC52ZnJjLXByb2FjdGl2ZV9fY2FyZCB7IGRpcmVjdGlvbjogcnRsOyB0ZXh0LWFsaWduOiByaWdodDsgfQo='
+        }
+      });
+      setTimeout(function(){ try { window.voiceflow.chat.open(); } catch(e){} }, 1500);
+    };
+    v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs'; v.type = 'text/javascript'; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+  document.querySelectorAll('.chip').forEach(function(b){
+    b.addEventListener('click', function(){
+      if (!window.voiceflow || !window.voiceflow.chat) return;
+      window.voiceflow.chat.open();
+      window.voiceflow.chat.interact({ type: 'text', payload: b.dataset.q });
+    });
+  });
+</script>
+</body>
+</html>
